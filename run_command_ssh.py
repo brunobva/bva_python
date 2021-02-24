@@ -2,7 +2,7 @@ import paramiko
 
 address = '45.77.18.220'
 user = 'root'
-passwd = '}1qA7Kt.!Sf},eNh'
+passwd = 
 
 def ssh_connect(command):
     ssh = paramiko.SSHClient()
