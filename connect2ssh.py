@@ -2,7 +2,7 @@ import paramiko
 
 address = '45.77.18.220'
 username = 'root'
-passwd = '}1qA7Kt.!Sf},eNh'
+passwd = ''
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
