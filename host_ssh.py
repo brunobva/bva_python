@@ -1,16 +1,22 @@
 # Ler lista de hosts de um arquivo;
 import paramiko
-fi = open(r'basis_hosts.txt')
-ln = fi.readlines()
+import csv, os
 
-for line in ln:
-    if line.strip() != '':
-        print(line)
+fi = open(r'hosts_lab.csv')
 
+h = csv.reader(fi)
+
+
+fi.close()
+# ln = fi.readlines()
+
+# for line in ln:
+#     if line.strip() != '':
+#         print(line)
 
 # h = [ln.rstrip('\n').rsplit(',') for ln in fi]
 # print(h)
-fi.close()
+
 # linedict = dict([(no, line) for no, line in enumerate(fi.readlines())])
 # print(linedict, end='')
     # if ln.startswith("PRD"):

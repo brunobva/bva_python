@@ -1,2 +1,0 @@
-PRD_APP bvalab001 bvalab004
-DEV_APP bvalab002 bvalab003
