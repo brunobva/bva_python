@@ -1,0 +1,26 @@
+import os
+import csv
+
+ 
+
+from pprint import pprint
+
+ 
+
+# disco = os.popen("df -h").readlines()
+disco = os.popen(r"df -k | sed -E 's/ +/,/g'").readlines()
+
+ 
+
+pprint(disco)
+
+ 
+
+csvfile = "disco.csv"
+
+ 
+
+with open(csvfile, "w") as output:
+    writer = csv.writer(output)
+    for linha in disco:
+        writer.writerow([linha])
