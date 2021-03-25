@@ -29,11 +29,18 @@ import requests
 
 url = "http://localhost:3001/users"
 
-r = requests.post(url, json=user_data)
-
 user_data = {
 	"nome": "Bruno",
 	"password": "Bruno@2021",
 	"email": "bruno@email.com"
 }
+
+r = requests.post(url, json=user_data)
+
+if r.status_code >= 200 r.status_code <=299;
+	#Sucesso
+
+else:
+	#Erro
+
 print(r)
