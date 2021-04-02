@@ -27,7 +27,13 @@
 #### https://youtu.be/Qd8JT0bnJGs
 import requests
 
-url = "http://localhost:3001/users"
+url = 'http://127.0.0.1:3001/users'
+
+user_data = {
+			"nome": "Vanessa Moraes",
+			"password": "123321",
+			"email": "Vanessa@email.com" 
+}
 
 user_data = {
 	"nome": "Bruno",

@@ -1,0 +1,15 @@
+FROM node:latest
+
+RUN mkdir /app
+
+WORKDIR /app
+
+EXPOSE 3001
+
+ADD ./simple_api_rest_sqlite .
+
+RUN npm i && \
+    npx sequelize db:migrate && \
+    npx sequelize db:seed:all
+
+CMD ["npm", "run", "dev"]
